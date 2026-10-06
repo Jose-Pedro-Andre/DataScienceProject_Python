@@ -18,7 +18,15 @@ def ft_count_characters(sentences, type) -> int :
 
 
 def main():
-    sentence = sys.argv[1]
+    argc = len(sys.argv);
+    if (argc > 2):
+        print("AssertionError")
+        return ;
+    if argc < 2: 
+        # print("What is the text to count?")
+        sentence = input("What is the text to count?\n");
+    else:
+        sentence = sys.argv[1]
     print(f"The text contains {len(sentence)} charaters: ")
     print(f"{ft_count_characters(sentence, 'upper')} upper letters")
     print(f"{ft_count_characters(sentence, 'lower')} lower letters")
