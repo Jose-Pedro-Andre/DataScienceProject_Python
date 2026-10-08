@@ -2,8 +2,8 @@ def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int |
     """
         The funtion calcule the BMI
 
-        :param A: a list of integers or floats representing the height of different people
-        :param B: a list of integers or floats representing the weight of different people
+        :param height: a list of integers or floats representing the height of different people
+        :param weight: a list of integers or floats representing the weight of different people
         :return: BMI calculation
     """
     bmi = [j / (i * i )for j, i in zip(weight, height)]
